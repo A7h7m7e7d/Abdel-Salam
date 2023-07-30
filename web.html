@@ -175,27 +175,37 @@
 
         /* Mobile-specific styles */
         @media only screen and (max-width: 600px) {
+            .logo {
+                margin-left: 10px;
+                margin-right: 0;
+            }
 
-            /* Adjust header styles for mobile */
             .header-title {
                 font-size: 24px;
-                margin-right: 10px;
+                margin-right: 0;
             }
 
-            .logo {
-                margin-left: 65px;
+            nav ul {
+                flex-direction: column;
             }
 
-            /* ... */
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
 
-            /* Mobile-specific styles for enroll button */
+            /* Main section styles */
+            section {
+                padding: 30px;
+            }
+
             .enroll-btn {
                 font-size: 16px;
                 padding: 15px 30px;
             }
 
             .enroll-btn span:last-child {
-                transform: translateY(180%) translateX(-50%);
+                transform: translateY(150%) translateX(-50%);
                 font-size: 12px;
             }
         }
